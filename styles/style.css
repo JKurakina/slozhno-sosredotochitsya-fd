@@ -71,3 +71,8 @@
   background-color: var(--decor-color);
   box-shadow: 0 0 4px 2px var(--decor-color);
 }
+
+
+.footer {
+  position: relative;
+}
