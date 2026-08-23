@@ -3,8 +3,21 @@
   color: var(--text-color);
   font-family: 'IBM Plex mono', monospace;
   font-size: 18px;
+  background-image: url('../images/cover-image-dark.png');
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
+
+.header {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  padding: 10px;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+}
+
 
 .content {
   padding: 40px 10px;
