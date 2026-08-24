@@ -107,3 +107,26 @@
   border-color: var(--decor-color);
   pointer-events: none;
 }
+
+.header__title {
+  margin: 0;
+  color: var(--title-color);
+  font-size: clamp(7.25rem, 7rem + 1.3vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 0.83;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__description {
+  align-self: center;
+  justify-self: end;
+  max-width: 355px;
+  margin: 0;
+  color: var(--decor-text-color);
+  font-weight: 700;
+  line-height: 23.4px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
