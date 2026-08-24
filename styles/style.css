@@ -129,6 +129,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
+  color: var(--decor-text-color);
 }
 
 .content-section__title {
@@ -176,4 +177,18 @@
 
 .content-section_type_tips>.content-section__body>.content-section__subtitle {
   font-weight: 700;
+}
+
+.content-section__text a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.content-section__text a:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.content-section__text a:focus-visible {
+  outline: 1px solid currentColor;
 }
