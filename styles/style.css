@@ -226,7 +226,6 @@
   width: 100%;
 }
 
-
 @media (width >=768px) {
 
   .header {
@@ -274,5 +273,61 @@
 
   .footer {
     padding: 20px;
+  }
+}
+
+@media (width >=1024px) {
+
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+    margin-block-start: 10px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__title {
+    font-size: 157px;
+  }
+
+  .header__description {
+    max-width: 491px;
+  }
+
+  .content {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+  }
+
+  .gallery__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(200px, auto));
+  }
+
+  .gallery__image_type_sunset {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .gallery__image_type_ice-cream {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .gallery__image_type_tape {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  .gallery__image_type_books {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .gallery__image_type_street {
+    grid-column: 2 / 4;
+    grid-row: 3;
   }
 }
