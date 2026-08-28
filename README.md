@@ -1,1 +1,1 @@
-Учебный проект по итогам третьего спринта на тему адаптивной верстки "Сложно сосредоточиться..."
+https://github.com/JKurakina/slozhno-sosredotochitsya-fd
