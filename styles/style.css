@@ -6,8 +6,11 @@
   color: var(--text-color);
   font-size: 18px;
   background-image: url('../images/cover-image-dark.png');
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
+  font-family: var(--main-font);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Шапка */
@@ -17,7 +20,6 @@
   width: 100%;
   height: 100vh;
   min-height: 668px;
-  margin-inline-start: calc(50% - 50vw);
   padding: 10px;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -63,6 +65,7 @@
   inset-inline-end: 38px;
   color: var(--decor-color);
   line-height: 25px;
+  text-transform: uppercase;
 }
 
 .header__rec::after {
@@ -237,10 +240,6 @@
     grid-template-columns: 1fr;
   }
 
-  .content-section_type_reasons .content-section__body {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .content-section_type_tips {
     grid-template-columns: 1fr 2fr;
   }
@@ -256,6 +255,27 @@
   .gallery__items {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+  }
+
+  .gallery__image_type_sunset { 
+    grid-column: 1 / 3; 
+    grid-row: 1; 
+  } 
+  .gallery__image_type_ice-cream { 
+    grid-column: 3; 
+    grid-row: 1 / 3; 
+  } 
+  .gallery__image_type_tape { 
+    grid-column: 1; 
+    grid-row: 2 / 4; 
+  } 
+  .gallery__image_type_books { 
+    grid-column: 2; 
+    grid-row: 2; 
+  } 
+    .gallery__image_type_street {
+    grid-column: 2 / 4; 
+    grid-row: 3; 
   }
 
   .gallery__image {
@@ -294,28 +314,8 @@
     grid-template-rows: repeat(3, minmax(200px, auto));
   }
 
-  .gallery__image_type_sunset {
-    grid-column: 1 / 3;
-    grid-row: 1;
+    .content-section_type_reasons .content-section__body {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .gallery__image_type_ice-cream {
-    grid-column: 3;
-    grid-row: 1 / 3;
-  }
-
-  .gallery__image_type_tape {
-    grid-column: 1;
-    grid-row: 2 / 4;
-  }
-
-  .gallery__image_type_books {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .gallery__image_type_street {
-    grid-column: 2 / 4;
-    grid-row: 3;
-  }
 }

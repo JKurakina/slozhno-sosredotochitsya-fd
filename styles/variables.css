@@ -5,5 +5,5 @@
   --title-color: #db00ff;
   --decor-color: #ff0070;
   --decor-text-color: #000028;
- font-family: 'IBM Plex mono', monospace;
+  --main-font: 'IBM Plex mono', monospace;
 }
